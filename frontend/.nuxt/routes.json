@@ -1,0 +1,23 @@
+[
+  {
+    "name": "callback",
+    "path": "/callback",
+    "component": "/home/duke/Desktop/Workplace/playground/django/use_oauth/frontend/pages/callback.vue",
+    "chunkName": "pages/callback",
+    "_name": "_6f40501c"
+  },
+  {
+    "name": "user",
+    "path": "/user",
+    "component": "/home/duke/Desktop/Workplace/playground/django/use_oauth/frontend/pages/user.vue",
+    "chunkName": "pages/user",
+    "_name": "_1264bfbc"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/duke/Desktop/Workplace/playground/django/use_oauth/frontend/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_bdafa9ea"
+  }
+]

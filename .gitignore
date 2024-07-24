@@ -1,0 +1,15 @@
+# 排除所有 Python 編譯文件
+*.pyc
+*.pyo
+
+# 排除根目錄中的 .env 文件
+.env
+
+# 排除子目錄中的 .env 文件
+**/.env
+
+# 排除 node_modules 目錄
+frontend/node_modules/
+
+# 排除 db.sqlite3 文件
+backend/db.sqlite3

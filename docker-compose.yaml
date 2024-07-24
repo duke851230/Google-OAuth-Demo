@@ -1,0 +1,26 @@
+services:
+  frontend:
+    image: oauth-frontend
+    build:
+      context: ./
+      dockerfile: ./frontend/build/Dockerfile
+    ports:
+      - 3000:3000
+    restart: on-failure
+    volumes:
+      - ./frontend/pages:/workplace/pages
+      - ./frontend/components:/workplace/components
+      - ./frontend/nuxt.config.js:/workplace/nuxt.config.js
+    depends_on: [backend]
+
+  backend:
+    image: oauth-backend
+    build:
+      context: ./
+      dockerfile: ./backend/build/Dockerfile
+    restart: on-failure
+    volumes:
+      - ./backend/auth_app:/workplace/auth_app
+      - ./backend/configs:/workplace/configs
+    ports:
+      - 8000:8000
